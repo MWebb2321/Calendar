@@ -1,109 +1,73 @@
-* {
-  margin: 0;
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.textarea {
+  background: transparent;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  border-bottom: 1px;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Quicksand" sans-serif;
+  border-radius: 0;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-.container {
-  width: 100%;
-  height: 100vh;
-  background-color: grey;
-  color: rgba(210, 210, 210, 0.687);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.calendar {
-  width: 45rem;
-  height: 52rem;
-  background-color: black;
-  box-shadow: black;
-}
-
-.month {
-  width: 100%;
-  height: 12rem;
-  background-color: #167e56;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
+.jumbotron {
   text-align: center;
-  text-shadow: 0 0.3rem 0.5rem black;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 5px solid black;
 }
 
-.month i {
-  font-size: 2.5rem;
-  cursor: pointer;
+.description {
+  white-space: pre-wrap;
 }
 
-.month h1 {
-  font-size: 3rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  margin-bottom: 1rem;
+.time-block {
+  text-align: center;
+  border-radius: 15px;
+  padding-bottom: 10px;
 }
 
-.month p {
-  font-size: 1.6rem;
+.row {
+  white-space: pre-wrap;
 }
 
-.weekdays {
-  width: 100%;
-  height: 5rem;
-  padding: 0 0.4rem;
-  display: flex;
-  align-items: center;
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  height: 79px;
 }
 
-.weekdays div {
-  font-size: 1.5rem;
-  font-weight: 400;
-  letter-spacing: 0.1rem;
-  width: calc(44.2rem / 7);
-  display: flex;
-  justify-content: center;
-  align-items: cneter;
-  text-shadow: 0 0.3rem 0.5rem rbga(0, 0, 0, 0.5);
+.past {
+  background-color: darkgray;
+  color: white;
 }
 
-.days {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0.2rem;
+.present {
+  background-color: salmon;
+  color: white;
 }
 
-.days div {
-  font-size: 1.4rem;
-  margin: 0.3rem;
-  width: calc(40.2rem / 7);
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 0 0.3rem 0.5rem rgba(210, 210, 210, 0.687);
-  transition: background-color 0.3s;
+.future {
+  background-color: lime;
+  color: white;
 }
 
-.days div:hover:not(.today) {
-  background-color: #262626;
-  border: 0.2rem solid #666;
-  cursor: pointer;
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: lightskyblue;
+  color: black;
+  padding: 25px 45px;
 }
 
-.prev-date,
-.next-date {
-  opacity: 0.5%;
-}
-
-.today {
-  background-color: #167e56;
+.mb-3 {
+  margin-bottom: 0rem !important;
+  height: 79px;
 }
