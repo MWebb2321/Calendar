@@ -1,6 +1,6 @@
 window.onload = function(){
     colorCode();
-    eightAm();
+    eightAM();
     nineAM();
     tenAM();
     elevenAM();
@@ -22,12 +22,12 @@ window.onload = function(){
   
   function colorCode() {
     if (now > 8) {
-        $("#comment8am").addClass("past");
-      } else if (now >= 8 && now < 9) {
-        $("#comment8am").addClass("present");
-      } else if (now < 8) {
-        $("#comment8am").addClass("future");
-      }
+      $("#comment8am").addClass("past");
+    } else if (now >= 8 && now < 9) {
+      $("#comment8am").addClass("present");
+    } else if (now < 8) {
+      $("#comment8am").addClass("future");
+    }
     if (now > 9) {
       $("#comment9am").addClass("past");
     } else if (now >= 9 && now < 10) {
